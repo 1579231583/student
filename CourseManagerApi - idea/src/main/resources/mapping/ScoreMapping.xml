@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.rabbiter.cm.dao.mapper.ScoreMapper">
+
+    <select id="getScoreList" resultType="com.rabbiter.cm.model.vo.ScoreVo">
+        SELECT rc.student_name,COALESCE(SUM(rs.sc_score),0) as score FROM rc_student rc LEFT JOIN rc_student_course rs
+            ON rc.student_id=rs.sc_student_id LEFT JOIN rc_course rc1 ON rs.sc_course_id=rc1.course_id GROUP BY rc.student_name
+    </select>
+
+</mapper>
