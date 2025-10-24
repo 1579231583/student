@@ -3,7 +3,7 @@
     <div class="header-ico">
       <i class="iconfont icon-r-building" style="font-size: 30px;"></i>
     </div>
-    <div class="logo">小学教务管理系统</div>
+    <div class="logo">教务管理系统</div>
     <div class="head-right">
       <div class="head-user-con">
         <div @click="handleFullScreen" class="btn-fullscreen">

@@ -1,7 +1,7 @@
 
 <template>
     <div id="home">
-        <h2 class="welcome">欢迎使用小学教务管理系统</h2>
+        <h2 class="welcome">欢迎使用教务管理系统</h2>
         <div class="welcome-container" v-if="this.$store.state.status.userType == 3">
             <h3 class="welcome"> 管理员端</h3>
         </div>

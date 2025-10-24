@@ -3,7 +3,7 @@
         <div class="login-form" style="opacity: 0.9">
             <div class="form-title">
                 <i class="iconfont icon-r-paper" style="font-size: 26px">
-                    登录小学教务管理系统</i
+                    登录教务管理系统</i
                 >
             </div>
             <el-form
