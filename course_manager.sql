@@ -1,23 +1,7 @@
-/*
-Navicat MySQL Data Transfer
-
-Source Server         : localhost
-Source Server Version : 80039
-Source Host           : localhost:3306
-Source Database       : course_manager
-
-Target Server Type    : MYSQL
-Target Server Version : 80039
-File Encoding         : 65001
-
-Date: 2025-01-06 22:33:34
-*/
 
 SET FOREIGN_KEY_CHECKS=0;
 
--- ----------------------------
--- Table structure for rc_admin
--- ----------------------------
+
 DROP TABLE IF EXISTS `rc_admin`;
 CREATE TABLE `rc_admin` (
   `admin_id` int unsigned NOT NULL AUTO_INCREMENT,
@@ -28,14 +12,10 @@ CREATE TABLE `rc_admin` (
   UNIQUE KEY `idx_admin_username` (`admin_username`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
 
--- ----------------------------
--- Records of rc_admin
--- ----------------------------
+
 INSERT INTO `rc_admin` VALUES ('1', 'admin', '123456', '255');
 
--- ----------------------------
--- Table structure for rc_class
--- ----------------------------
+
 DROP TABLE IF EXISTS `rc_class`;
 CREATE TABLE `rc_class` (
   `class_id` int unsigned NOT NULL AUTO_INCREMENT,
@@ -48,14 +28,10 @@ CREATE TABLE `rc_class` (
   CONSTRAINT `rc_class_ibfk_1` FOREIGN KEY (`class_major_id`) REFERENCES `rc_major` (`major_id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
 
--- ----------------------------
--- Records of rc_class
--- ----------------------------
+
 INSERT INTO `rc_class` VALUES ('1', '1', '2023', '计科2301班');
 
--- ----------------------------
--- Table structure for rc_course
--- ----------------------------
+
 DROP TABLE IF EXISTS `rc_course`;
 CREATE TABLE `rc_course` (
   `course_id` int unsigned NOT NULL AUTO_INCREMENT,
@@ -75,16 +51,12 @@ CREATE TABLE `rc_course` (
   CONSTRAINT `rc_course_ibfk_1` FOREIGN KEY (`course_teacher_id`) REFERENCES `rc_teacher` (`teacher_id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
 
--- ----------------------------
--- Records of rc_course
--- ----------------------------
+
 INSERT INTO `rc_course` VALUES ('9', '1', 'Java程序设计', '2023', '2-2-2', '第一教学楼201', '2', '1', '50', null, '第一教学楼201');
 INSERT INTO `rc_course` VALUES ('10', '1', '计算机组成原理', '2023', '3-5-2', '第二教学楼502', '2', '0', '50', null, '第二教学楼502');
 INSERT INTO `rc_course` VALUES ('11', '1', '计算机网络', '2023', '5-3-2', '第一教学楼202', '2', '1', '50', null, '第一教学楼202');
 
--- ----------------------------
--- Table structure for rc_department
--- ----------------------------
+
 DROP TABLE IF EXISTS `rc_department`;
 CREATE TABLE `rc_department` (
   `department_id` int unsigned NOT NULL AUTO_INCREMENT,
@@ -92,16 +64,12 @@ CREATE TABLE `rc_department` (
   PRIMARY KEY (`department_id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
 
--- ----------------------------
--- Records of rc_department
--- ----------------------------
+
 INSERT INTO `rc_department` VALUES ('1', '计算机系');
 INSERT INTO `rc_department` VALUES ('6', '一年级');
 INSERT INTO `rc_department` VALUES ('7', '二年级');
 
--- ----------------------------
--- Table structure for rc_major
--- ----------------------------
+
 DROP TABLE IF EXISTS `rc_major`;
 CREATE TABLE `rc_major` (
   `major_id` int unsigned NOT NULL AUTO_INCREMENT,
@@ -113,14 +81,10 @@ CREATE TABLE `rc_major` (
   CONSTRAINT `rc_major_ibfk_1` FOREIGN KEY (`major_department_id`) REFERENCES `rc_department` (`department_id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
 
--- ----------------------------
--- Records of rc_major
--- ----------------------------
+
 INSERT INTO `rc_major` VALUES ('1', '1', '计算机科学与技术');
 
--- ----------------------------
--- Table structure for rc_option
--- ----------------------------
+
 DROP TABLE IF EXISTS `rc_option`;
 CREATE TABLE `rc_option` (
   `id` int NOT NULL AUTO_INCREMENT COMMENT '主键',
@@ -129,15 +93,11 @@ CREATE TABLE `rc_option` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin ROW_FORMAT=DYNAMIC;
 
--- ----------------------------
--- Records of rc_option
--- ----------------------------
+
 INSERT INTO `rc_option` VALUES ('1', 'ALLOW_STUDENT_SELECT', 'true');
 INSERT INTO `rc_option` VALUES ('2', 'ALLOW_TEACHER_GRADE', 'true');
 
--- ----------------------------
--- Table structure for rc_student
--- ----------------------------
+
 DROP TABLE IF EXISTS `rc_student`;
 CREATE TABLE `rc_student` (
   `student_id` int unsigned NOT NULL AUTO_INCREMENT,
@@ -156,15 +116,11 @@ CREATE TABLE `rc_student` (
   CONSTRAINT `rc_student_ibfk_1` FOREIGN KEY (`student_class_id`) REFERENCES `rc_class` (`class_id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
 
--- ----------------------------
--- Records of rc_student
--- ----------------------------
+
 INSERT INTO `rc_student` VALUES ('1', '1', '202307300101', '李四', '123456', '123@qq.com', '1998-08-19 00:00:00', '0', '2025-01-04 14:16:49');
 INSERT INTO `rc_student` VALUES ('4', '1', '202307300107', '李三', '123456', null, null, '0', null);
 
--- ----------------------------
--- Table structure for rc_student_course
--- ----------------------------
+
 DROP TABLE IF EXISTS `rc_student_course`;
 CREATE TABLE `rc_student_course` (
   `sc_id` int unsigned NOT NULL AUTO_INCREMENT,
@@ -180,16 +136,12 @@ CREATE TABLE `rc_student_course` (
   CONSTRAINT `rc_student_course_ibfk_2` FOREIGN KEY (`sc_student_id`) REFERENCES `rc_student` (`student_id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
 
--- ----------------------------
--- Records of rc_student_course
--- ----------------------------
+
 INSERT INTO `rc_student_course` VALUES ('23', '1', '9', '40', '55', '95');
 INSERT INTO `rc_student_course` VALUES ('28', '1', '11', '30', '60', '90');
 INSERT INTO `rc_student_course` VALUES ('32', '4', '11', '50', '80', '130');
 
--- ----------------------------
--- Table structure for rc_teacher
--- ----------------------------
+
 DROP TABLE IF EXISTS `rc_teacher`;
 CREATE TABLE `rc_teacher` (
   `teacher_id` int unsigned NOT NULL AUTO_INCREMENT,
@@ -203,7 +155,5 @@ CREATE TABLE `rc_teacher` (
   CONSTRAINT `rc_teacher_ibfk_1` FOREIGN KEY (`teacher_department_id`) REFERENCES `rc_department` (`department_id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
 
--- ----------------------------
--- Records of rc_teacher
--- ----------------------------
+
 INSERT INTO `rc_teacher` VALUES ('1', '1', '202307300201', '张三', '123456');
