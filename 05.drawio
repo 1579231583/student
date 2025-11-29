@@ -1,9 +1,36 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.2.1">
   <diagram name="第 1 页" id="Hh_zJhDKF8kK9E_idB-B">
-    <mxGraphModel>
+    <mxGraphModel dx="921" dy="576" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="LXVG553q37pa5Hyie3qp-3" edge="1" parent="1" source="LXVG553q37pa5Hyie3qp-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="LXVG553q37pa5Hyie3qp-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LXVG553q37pa5Hyie3qp-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="WWW页面层" vertex="1">
+          <mxGeometry height="46" width="134" x="318.5" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="LXVG553q37pa5Hyie3qp-9" edge="1" parent="1" source="LXVG553q37pa5Hyie3qp-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LXVG553q37pa5Hyie3qp-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LXVG553q37pa5Hyie3qp-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="104" width="611" x="80" y="249" as="geometry" />
+        </mxCell>
+        <mxCell id="LXVG553q37pa5Hyie3qp-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="动态管理" vertex="1">
+          <mxGeometry height="60" width="120" x="127" y="261" as="geometry" />
+        </mxCell>
+        <mxCell id="LXVG553q37pa5Hyie3qp-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="关注管理" vertex="1">
+          <mxGeometry height="60" width="120" x="315" y="261" as="geometry" />
+        </mxCell>
+        <mxCell id="LXVG553q37pa5Hyie3qp-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="通知服务管理" vertex="1">
+          <mxGeometry height="60" width="120" x="498" y="261" as="geometry" />
+        </mxCell>
+        <mxCell id="LXVG553q37pa5Hyie3qp-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="应用逻辑层" vertex="1">
+          <mxGeometry height="30" width="81" x="337" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="LXVG553q37pa5Hyie3qp-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="数据管理层" vertex="1">
+          <mxGeometry height="60" width="120" x="325.5" y="416" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
