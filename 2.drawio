@@ -1,23 +1,59 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.2.1">
   <diagram name="第 1 页" id="64GwS3E7Ecrgiu_sWocm">
-    <mxGraphModel dx="1394" dy="1018" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1321" dy="976" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="UCRq3iPBZnqfxgFO8Cj2-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="用户" vertex="1">
-          <mxGeometry height="60" width="30" x="-33" y="-50" as="geometry" />
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="用户" vertex="1">
+          <mxGeometry height="60" width="30" x="-129" y="9" as="geometry" />
         </mxCell>
-        <mxCell id="UCRq3iPBZnqfxgFO8Cj2-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;direction=south;" value="Use Case" vertex="1">
-          <mxGeometry height="370" width="114" x="231" y="-118" as="geometry" />
-        </mxCell>
-        <mxCell id="UCRq3iPBZnqfxgFO8Cj2-14" edge="1" parent="1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" value="">
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-3" edge="1" parent="1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="EdBjuzyRdUJ9CkMSBTBq-7" value="">
           <mxGeometry relative="1" width="160" as="geometry">
-            <mxPoint x="81" y="-43" as="sourcePoint" />
-            <mxPoint x="241" y="-43" as="targetPoint" />
+            <mxPoint x="-88" y="30" as="sourcePoint" />
+            <mxPoint x="134" y="-32" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="UCRq3iPBZnqfxgFO8Cj2-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="发布动态事务" vertex="1">
-          <mxGeometry height="30" width="86" x="126" y="-65" as="geometry" />
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-5" edge="1" parent="1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="EdBjuzyRdUJ9CkMSBTBq-11" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-86" y="48" as="sourcePoint" />
+            <mxPoint x="131" y="31" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-6" edge="1" parent="1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="EdBjuzyRdUJ9CkMSBTBq-10" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-89" y="59" as="sourcePoint" />
+            <mxPoint x="127" y="86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-15" edge="1" parent="1" source="EdBjuzyRdUJ9CkMSBTBq-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="EdBjuzyRdUJ9CkMSBTBq-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="发布动态" vertex="1">
+          <mxGeometry height="37" width="109" x="131" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="发送通知" vertex="1">
+          <mxGeometry height="37" width="109" x="475" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-17" edge="1" parent="1" source="EdBjuzyRdUJ9CkMSBTBq-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="EdBjuzyRdUJ9CkMSBTBq-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="移除用户" vertex="1">
+          <mxGeometry height="37" width="109" x="117" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-16" edge="1" parent="1" source="EdBjuzyRdUJ9CkMSBTBq-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="EdBjuzyRdUJ9CkMSBTBq-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="关注用户" vertex="1">
+          <mxGeometry height="37" width="109" x="128" y="-24" as="geometry" />
+        </mxCell>
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="添加观察者" vertex="1">
+          <mxGeometry height="37" width="109" x="478" y="-24" as="geometry" />
+        </mxCell>
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="移除观察者" vertex="1">
+          <mxGeometry height="37" width="109" x="484" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="EdBjuzyRdUJ9CkMSBTBq-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="管理通知设置" vertex="1">
+          <mxGeometry height="37" width="109" x="112" y="164" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
