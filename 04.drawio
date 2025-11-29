@@ -1,9 +1,54 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.2.1">
   <diagram name="第 1 页" id="6wdGpBAEt1XgqACdCR3o">
-    <mxGraphModel>
+    <mxGraphModel dx="915" dy="976" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="JYJCNgyOSioeuNyQEqDz-7" parent="1" style="html=1;whiteSpace=wrap;" value="社交媒体平台通知系统" vertex="1">
+          <mxGeometry height="173" width="191" x="261" y="-110" as="geometry" />
+        </mxCell>
+        <mxCell id="JYJCNgyOSioeuNyQEqDz-12" parent="1" style="html=1;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="43" width="14" x="255" y="-98" as="geometry" />
+        </mxCell>
+        <mxCell id="JYJCNgyOSioeuNyQEqDz-15" parent="1" style="html=1;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="43" width="14" x="255" y="2" as="geometry" />
+        </mxCell>
+        <mxCell id="JYJCNgyOSioeuNyQEqDz-16" parent="1" style="html=1;whiteSpace=wrap;" value="用户" vertex="1">
+          <mxGeometry height="53" width="83" x="85" y="-103" as="geometry" />
+        </mxCell>
+        <mxCell id="JYJCNgyOSioeuNyQEqDz-17" parent="1" style="html=1;whiteSpace=wrap;" value="粉丝" vertex="1">
+          <mxGeometry height="51" width="81" x="85" y="-5" as="geometry" />
+        </mxCell>
+        <mxCell id="JYJCNgyOSioeuNyQEqDz-19" edge="1" parent="1" source="JYJCNgyOSioeuNyQEqDz-16" style="endArrow=block;startArrow=block;endFill=1;startFill=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="179" y="-75" as="sourcePoint" />
+            <mxPoint x="256" y="-77" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JYJCNgyOSioeuNyQEqDz-20" edge="1" parent="1" style="endArrow=block;startArrow=block;endFill=1;startFill=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="166" y="18" as="sourcePoint" />
+            <mxPoint x="254" y="18" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JYJCNgyOSioeuNyQEqDz-23" edge="1" parent="1" source="JYJCNgyOSioeuNyQEqDz-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="JYJCNgyOSioeuNyQEqDz-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JYJCNgyOSioeuNyQEqDz-21" parent="1" style="html=1;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="43" width="14" x="445" y="-93" as="geometry" />
+        </mxCell>
+        <mxCell id="JYJCNgyOSioeuNyQEqDz-22" parent="1" style="whiteSpace=wrap;html=1;" value="短信服务" vertex="1">
+          <mxGeometry height="60" width="120" x="546" y="-101.5" as="geometry" />
+        </mxCell>
+        <mxCell id="JYJCNgyOSioeuNyQEqDz-26" edge="1" parent="1" source="JYJCNgyOSioeuNyQEqDz-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="JYJCNgyOSioeuNyQEqDz-25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JYJCNgyOSioeuNyQEqDz-24" parent="1" style="html=1;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="43" width="14" x="445" y="-1" as="geometry" />
+        </mxCell>
+        <mxCell id="JYJCNgyOSioeuNyQEqDz-25" parent="1" style="whiteSpace=wrap;html=1;" value="邮件服务" vertex="1">
+          <mxGeometry height="60" width="120" x="546" y="-9.5" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
